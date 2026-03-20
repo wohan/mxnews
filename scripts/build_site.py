@@ -321,7 +321,7 @@ def generate_main_page(articles_by_cat):
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 MX NEWS. Все права защищены. <span class="footer-counter" style="margin-left: 20px; font-size: 0.9em; opacity: 0.8;"></span></p>
+            <p>© 2026 MX NEWS. Все права защищены.</p>
         </div>
     </footer>
     <script src="/js/main.js"></script>

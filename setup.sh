@@ -27,7 +27,7 @@ pip3 install deep-translator beautifulsoup4 requests lxml
 
 # Создание директорий
 echo "📁 Создание структуры директорий..."
-mkdir -p /var/www/mxnews/{data,js,css,stats}
+mkdir -p /var/www/mxnews/{data,js,css}
 chown -R www-data:www-data /var/www/mxnews
 chmod -R 755 /var/www/mxnews
 
@@ -36,7 +36,6 @@ echo "📄 Копирование файлов..."
 cp -r scripts /var/www/mxnews/
 cp -r js /var/www/mxnews/
 cp -r css /var/www/mxnews/ 2>/dev/null || true
-cp -r stats /var/www/mxnews/ 2>/dev/null || true
 
 # Настройка Nginx
 echo "🌐 Настройка Nginx..."
@@ -79,7 +78,6 @@ echo "📊 Следующие шаги:"
 echo "1. Настройте DNS запись для вашего домена"
 echo "2. Получите SSL сертификат: certbot --nginx -d ваш-домен.ru"
 echo "3. Проверьте сайт: https://ваш-домен.ru"
-echo "4. Статистика: https://ваш-домен.ru/stats/"
 echo ""
 echo "🔄 Автоматическое обновление настроено на 03:00 UTC каждый день"
 echo "📝 Логи: /var/log/mxnews.log"
